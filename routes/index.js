@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 const router = Router();
 
@@ -23,8 +24,8 @@ router.post("/quintino/contact", async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: "landing-form@quintino.com.ar",
-        pass: "kDAM$$;tyZA%kDAM$$;tyZA%",
+        user: process.env.QUINTINO_SMTP_USER,
+        pass: process.env.QUINTINO_SMTP_PASSWORD,
       },
     });
 
@@ -82,8 +83,8 @@ router.post("/ccj/admisiones", async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: "web-form@colegiociudadjardin.edu.ar",
-        pass: "Cora@2020",
+        user: process.env.CCJ_SMTP_USER,
+        pass: process.env.CCJ_SMTP_PASSWORD,
       },
     });
 
@@ -120,8 +121,8 @@ router.post("/ccj/contact", async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: "web-form@colegiociudadjardin.edu.ar",
-        pass: "Cora@2020",
+        user: process.env.CCJ_SMTP_USER,
+        pass: process.env.CCJ_SMTP_PASSWORD,
       },
     });
 
