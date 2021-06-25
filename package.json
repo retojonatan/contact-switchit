@@ -4,7 +4,7 @@
   "description": "this is a backend, designed to handle the contact forms on switchit",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./app.js"
   },
   "repository": {
     "type": "git",
