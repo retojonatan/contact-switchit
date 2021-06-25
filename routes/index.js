@@ -8,6 +8,10 @@ router.get("/", (req, res) => {
   res.status(301).redirect("https://switchit.com.ar");
 });
 
+router.post("/test", (req, res) => {
+  res.send(process.env.CCJ_SMTP_USER);
+});
+
 router.post("/quintino/contact", async (req, res) => {
   const { nombre, email, url, asunto } = req.body;
 
