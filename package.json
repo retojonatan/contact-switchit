@@ -1,0 +1,25 @@
+{
+  "name": "contact-switchit",
+  "version": "1.0.0",
+  "description": "this is a backend, designed to handle the contact forms on switchit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "nodejs",
+    "nodemailer",
+    "mailing",
+    "contact-form"
+  ],
+  "author": "retojonatan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.2"
+  }
+}
